@@ -445,14 +445,28 @@ form input[type="submit"] {
 
     .card {
          margin-bottom: 20px;
+         width: 300px;
     }
 
     .card img {
-        width: 200px;
+        width: 120px;
     }
 
     form {
-        width: 80%;
+        width: 90%;
     }    
+
+    .me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .part1 {
+        border: 2px solid red;
+    }
+
+    .part2 {
+        border: 2px solid blue;
+    } */
 
 }

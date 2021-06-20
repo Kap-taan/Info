@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+body {
+    transition: 2s all ease;
+}
+
 .main {
     background: var(--darkColor);
     border-bottom: 1px solid var(--borderColor);
@@ -147,7 +151,8 @@
     height: 30px;
     border-radius: 50%;
     background-color: #ffffff;
-    border: 2px solid var(--circleColor);;
+    border: 2px solid var(--circleColor);
+    cursor: pointer;
 }
 
 .color2{
@@ -155,7 +160,8 @@
     height: 30px;
     border-radius: 50%;
     background-color: #192734;
-    border: 2px solid var(--circleColor);;
+    border: 2px solid var(--circleColor);
+    cursor: pointer;
 }
 
 .color3{
@@ -163,7 +169,8 @@
     height: 30px;
     border-radius: 50%;
     background-color: #78866b;
-    border: 2px solid var(--circleColor);;
+    border: 2px solid var(--circleColor);
+    cursor: pointer;
 }
 
 .color4{
@@ -171,7 +178,13 @@
     height: 30px;
     border-radius: 50%;
     background-color: #7e4c74;
-    border: 2px solid var(--circleColor);;
+    border: 2px solid var(--circleColor);
+    cursor: pointer;
+}
+
+.color1:hover, .color2:hover, .color3:hover, .color4:hover {
+    width: 40px;
+    height: 40px;
 }
 
 .safari-left p {
@@ -292,6 +305,12 @@
     text-decoration: none;
     color: #3a7f8a;   
     font-size: 18px;
+    border: 2px solid var(--borderColor);
+    padding: 10px;
+    margin-bottom: 20px;
+    background: var(--buttonColor);
+    color: #fff;
+    cursor: pointer;
 }
 
 .projects {
@@ -385,6 +404,7 @@ form input {
     border: 1px solid grey;
     border-radius: 2px;
     background: var(--lightColor);
+    color: var(--headingColor);
 }
 
 form textarea {
@@ -399,17 +419,40 @@ form input[type="submit"] {
     
 }
 
-/* @media only screen and (max-width: 600px) {
-  .safari-body {
-      display: flex;
-      flex-direction: column;
-  }
-  .box1 {
+.none {
     display: none;
-  }
-  .box2 {
-      width: 300px;
-      height: 300px;
-  }
+}
 
-} */
+@media only screen and (max-width: 1224px) {
+  
+    .main h1 {
+        font-size: 25px;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .cards {
+        /* border: 2px solid red; */
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .card {
+         margin-bottom: 20px;
+    }
+
+    .card img {
+        width: 200px;
+    }
+
+    form {
+        width: 80%;
+    }    
+
+}

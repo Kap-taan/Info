@@ -22,7 +22,7 @@ if(theme === null || theme === 'white'){
 } else if(theme === 'green'){
     changeGreen();
 } else if (theme === 'purple'){
-    chnagePurple();
+    changePurple();
 }
 
 function changeWhite(){

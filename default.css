@@ -91,6 +91,8 @@ body {
 
 .nav-text {
     font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    text-decoration: none;
 }
 
 .nav-text a {

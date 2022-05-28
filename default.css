@@ -95,6 +95,7 @@ body {
 
 .nav-text a {
     color: #fff;
+    text-decoration: none;
 }
 .safari-body {
     /* border: 2px solid blue; */
